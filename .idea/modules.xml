@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BMI/BMI.iml" filepath="$PROJECT_DIR$/BMI/BMI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DayOfMonth/DayOfMonth.iml" filepath="$PROJECT_DIR$/DayOfMonth/DayOfMonth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hello/Hello.iml" filepath="$PROJECT_DIR$/Hello/Hello.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Practice-Solving-first-degree-equations/Practice-Solving-first-degree-equations.iml" filepath="$PROJECT_DIR$/Practice-Solving-first-degree-equations/Practice-Solving-first-degree-equations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/BMI/BMI.iml" filepath="$PROJECT_DIR$/lesson1/BMI/BMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/DayOfMonth/DayOfMonth.iml" filepath="$PROJECT_DIR$/lesson1/DayOfMonth/DayOfMonth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/Hello/Hello.iml" filepath="$PROJECT_DIR$/lesson1/Hello/Hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/Practice-Solving-first-degree-equations/Practice-Solving-first-degree-equations.iml" filepath="$PROJECT_DIR$/lesson1/Practice-Solving-first-degree-equations/Practice-Solving-first-degree-equations.iml" />
       <module fileurl="file://$PROJECT_DIR$/TH-Su-dung-toan-tu/TH-Su-dung-toan-tu.iml" filepath="$PROJECT_DIR$/TH-Su-dung-toan-tu/TH-Su-dung-toan-tu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/currency conversion/currency conversion.iml" filepath="$PROJECT_DIR$/currency conversion/currency conversion.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exercise-read-number-into-words/exercise-read-number-into-words.iml" filepath="$PROJECT_DIR$/exercise-read-number-into-words/exercise-read-number-into-words.iml" />
-      <module fileurl="file://$PROJECT_DIR$/leap-year-calculator/leap-year-calculator.iml" filepath="$PROJECT_DIR$/leap-year-calculator/leap-year-calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/currency-conversion/currency-conversion.iml" filepath="$PROJECT_DIR$/lesson1/currency-conversion/currency-conversion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/exercise-read-number-into-words/exercise-read-number-into-words.iml" filepath="$PROJECT_DIR$/lesson1/exercise-read-number-into-words/exercise-read-number-into-words.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/leap-year-calculator/leap-year-calculator.iml" filepath="$PROJECT_DIR$/lesson1/leap-year-calculator/leap-year-calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/lesson1.iml" filepath="$PROJECT_DIR$/lesson1/lesson1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/source.iml" filepath="$PROJECT_DIR$/.idea/source.iml" />
       <module fileurl="file://$PROJECT_DIR$/system-time/system-time.iml" filepath="$PROJECT_DIR$/system-time/system-time.iml" />
       <module fileurl="file://$PROJECT_DIR$/variable-dataType/variable-dataType.iml" filepath="$PROJECT_DIR$/variable-dataType/variable-dataType.iml" />
