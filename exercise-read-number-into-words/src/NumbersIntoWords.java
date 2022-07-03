@@ -2,93 +2,99 @@ import java.util.Scanner;
 
 public class NumbersIntoWords {
     public static void main(String[] args) {
+        int[] number = {0,1,2,3,4,5,6,7,8,9};
+
+        String[] nuberIntoWords = {"không","một","hai","ba","bốn","năm","sáu","bảy","tám","chín"};
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter number");
-        int number = scanner.nextInt();
-        String numberIntoWords="";
-        if ( number < 10 && 0<= number) {
-            switch (number) {
-                case 0:
-//                    System.out.println("Không");
-                    numberIntoWords= "Không";
-                    break;
-                case 1:
-//                    System.out.println("Một");
-                    numberIntoWords= "Một";
-                    break;
-                case 2:
-//                    System.out.println("Hai");
-                    numberIntoWords= "Hai";
-                    break;
-                case 3:
-//                    System.out.println("Ba");
-                    numberIntoWords= "Ba";
-                    break;
-                case 4:
-//                    System.out.println("Bốn");
-                    numberIntoWords= "Bốn";
-                    break;
-                case 5:
-//                    System.out.println("Năm");
-                    numberIntoWords= "Năm";
-                    break;
-                case 6:
-//                    System.out.println("Sáu");
-                    numberIntoWords= "Sáu";
-                    break;
-                case 7:
-//                    System.out.println("Bảy");
-                    numberIntoWords= "Bảy";
-                    break;
-                case 8:
-//                    System.out.println("Tám");
-                    numberIntoWords= "Tám";
-                    break;
-                case 9:
-//                    System.out.println("Chín");
-                    numberIntoWords= "Chín";
-                    break;
-            }
-        }else {
-            if(number<20){
-                switch (number) {
-                    case 10:
-//                        System.out.println("Mười");
-                        numberIntoWords= "Mười";
-                        break;
-                    case 11:
-//                        System.out.println("Một");
-                        numberIntoWords= "Mười một";
-                        break;
-                    case 12:
-                        System.out.println("Hai");
-                        break;
-                    case 3:
-                        System.out.println("Ba");
-                        break;
-                    case 4:
-                        System.out.println("Bốn");
-                        break;
-                    case 5:
-                        System.out.println("Năm");
-                        break;
-                    case 6:
-                        System.out.println("Sáu");
-                        break;
-                    case 7:
-                        System.out.println("Bảy");
-                        break;
-                    case 8:
-                        System.out.println("Tám");
-                        break;
-                    case 9:
-                        System.out.println("Chín");
-                        break;
+        while (true){
+            System.out.println("Enter your number:");
+            int num = scanner.nextInt();
+            int surplus = num%10;
+            int surplus1= num%100;
+            int quotient= num/10; // thương số
+            int quotient1= num/100; // thương số
+            String convert= "";
+            if(0<= num && num < 10){
+                for(int i=0; i<10; i++){
+                    if(num== number[i] ){
+                        System.out.println(nuberIntoWords[i]);
+                    }
                 }
             }
-        }
-        if(!numberIntoWords.equals("")){
-            System.out.println(numberIntoWords);
+            else {
+                if (num>10){
+                    for(int i= 0; i<10; i++){
+                        if(surplus==0 && quotient== number[i]){
+                            System.out.println(nuberIntoWords[i] + " mươi");
+                        }
+                    }
+                }
+                if(num<20){
+                    if(surplus==0){
+                        System.out.println("Mười");
+                    }
+                    for(int i=1; i<10; i++){
+
+                        if(surplus== number[i]){
+                            System.out.println("Mười "+ nuberIntoWords[i]);
+                        }
+                    }
+                }else {
+                    if(num<=99){
+//                        String convert= "";
+                        for(int i=1; i<10; i++){
+                            if(quotient==number[i]){
+                              convert = nuberIntoWords[i]+ " mươi ";
+                            }
+                        }
+                        for(int i=0; i<10; i++){
+                            if(surplus== number[i]){
+                                System.out.println(convert+ nuberIntoWords[i]);
+                            }
+                        }
+                    } else {
+                        String convert1="";
+                        if(num<=999){
+                            int quotient2= surplus1/10;
+//                            System.out.println(surplus);
+//                            System.out.println(quotient2);
+//                            System.out.println(quotient1);
+                            for(int i=1; i<10;i++){
+                                if(quotient1==number[i]){
+                                    convert= nuberIntoWords[i]+ " trăm ";
+                                }
+                            }
+                            if(quotient2==0 &&surplus == 0){
+                                System.out.println(convert);
+                            } else {
+                                for(int i=0; i<10; i++){
+                                    if(quotient2==0){
+                                        convert1 = convert+ " lẻ ";
+                                    } else {
+                                        if(quotient2==1){
+                                            convert1 = convert+ " mười ";
+                                        } else {
+                                            if(quotient2==number[i]){
+                                                convert1 = convert+ nuberIntoWords[i]+ " mươi ";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                                if(surplus==0){
+                                    System.out.println(convert1);
+                                } else {
+                                    for (int i = 0; i < 10; i++) {
+                                        if (surplus == number[i]) {
+                                            System.out.println(convert1 + nuberIntoWords[i]);
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+            System.out.println("----------------------Hello----------------------------");
         }
     }
 }
