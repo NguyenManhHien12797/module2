@@ -7,7 +7,8 @@ public class FictionBook extends Book {
         this.category= category;
     }
     public String toString(){
-        return "   "+bookCode+" \t\t"+ name+"\t " + price+" \t"+ author +"\t\t\t\t\t\t\t  "+ category+ " ";
+        return "   "+super.getBookCode()+" \t\t"+ super.getName()+"\t " +
+                super.getPrice()+" \t"+ super.getAuthor() +"\t\t\t\t\t\t\t  "+ category+ " ";
     }
     public String getCategory(){
         return category;

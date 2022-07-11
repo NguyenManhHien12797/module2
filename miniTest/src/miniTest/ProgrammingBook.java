@@ -10,7 +10,8 @@ public class ProgrammingBook extends Book{
     }
 @Override
     public String toString(){
-        return "   "+bookCode+" \t\t"+ name+"\t " + price+" \t"+ author +"\t "+ language+"\t "+ framework;
+        return "   "+super.getBookCode()+" \t\t"+ super.getName()+"\t " +
+                super.getPrice()+" \t"+ super.getAuthor() +"\t "+ language+"\t "+ framework;
     }
     public String getLanguage(){
         return language;

@@ -1,10 +1,10 @@
 package miniTest;
 
 public class Book {
-    public int bookCode;
-    public String name;
-    public double price;
-    public String author;
+    private int bookCode;
+    private String name;
+    private double price;
+    private String author;
 
     public Book(int bookCode, String name, double price, String author) {
         this.bookCode = bookCode;
@@ -12,10 +12,6 @@ public class Book {
         this.price = price;
         this.author = author;
     }
-//    public String toString(){
-//        return "bookCode: "+bookCode+ " name: "+ name+ " price: "+ price+ " author: "+ author ;
-//    }
-
     public int getBookCode() {
         return bookCode;
     }
