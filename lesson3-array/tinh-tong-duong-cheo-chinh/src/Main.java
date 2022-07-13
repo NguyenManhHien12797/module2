@@ -29,6 +29,5 @@ public class Main {
         }
         int total= cc+cp;
         System.out.println("Tổng 2 đường chéo là: "+total);
-
     }
 }

@@ -1,9 +1,13 @@
 package miniTest2;
 
 
+import java.util.Scanner;
+
 public class MiniTest {
     public static void main(String[] args) {
-
+//        Scanner scanner= new Scanner(System.in);
+//        System.out.print("Enter size: ");
+//        int size = scanner.nextInt();
         Employee employee[]= new Employee[5];
         employee[0]= new EmployeeFullTime(1,"Dung", 18,"0123456789","nguyendung@gmail.com",1500000,5000000,9000000);
         employee[1]= new EmployeeFullTime(2,"Hien",19,"0234123142","nguyenhien@gmail.com",1000000,500000,3000000);
@@ -24,8 +28,16 @@ public class MiniTest {
 
         System.out.println("Sắp xếp nhân viên fulltime theo số lương tăng dần: ");
         sortEmployeeFullTime(employee);
+//        add(employee);
+//        for(int i=0; i<employee.length; i++){
+//            System.out.println(employee[i]);
+//        }
 
     }
+//    public static Employee add(Employee[] arr){
+//        arr[0]= new EmployeePartTime(6,"Ba",18,"014151523","tranba@gmail.com",25);
+//        return arr[0];
+//    }
     // Tính lương trung bình
     public static double getAvgSalary(Employee[] array){
         double sum= 0;

@@ -6,14 +6,55 @@
       <module fileurl="file://$PROJECT_DIR$/lesson1/DayOfMonth/DayOfMonth.iml" filepath="$PROJECT_DIR$/lesson1/DayOfMonth/DayOfMonth.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson1/Hello/Hello.iml" filepath="$PROJECT_DIR$/lesson1/Hello/Hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson1/Practice-Solving-first-degree-equations/Practice-Solving-first-degree-equations.iml" filepath="$PROJECT_DIR$/lesson1/Practice-Solving-first-degree-equations/Practice-Solving-first-degree-equations.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TH-Su-dung-toan-tu/TH-Su-dung-toan-tu.iml" filepath="$PROJECT_DIR$/TH-Su-dung-toan-tu/TH-Su-dung-toan-tu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/TH-Su-dung-toan-tu/TH-Su-dung-toan-tu.iml" filepath="$PROJECT_DIR$/lesson1/TH-Su-dung-toan-tu/TH-Su-dung-toan-tu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/access-modifier/access-modifier.iml" filepath="$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/access-modifier/access-modifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/add-element- in-array/add-element- in-array.iml" filepath="$PROJECT_DIR$/lesson3-array/add-element- in-array/add-element- in-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/character-count/character-count.iml" filepath="$PROJECT_DIR$/lesson3-array/character-count/character-count.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6-inheritance/circle-and-cylinder/circle-and-cylinder.iml" filepath="$PROJECT_DIR$/lesson6-inheritance/circle-and-cylinder/circle-and-cylinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson4-class-and-object/class-rectang/class-rectang.iml" filepath="$PROJECT_DIR$/lesson4-class-and-object/class-rectang/class-rectang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/count-student/count-student.iml" filepath="$PROJECT_DIR$/lesson3-array/count-student/count-student.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson1/currency-conversion/currency-conversion.iml" filepath="$PROJECT_DIR$/lesson1/currency-conversion/currency-conversion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/demo/demo.iml" filepath="$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/display-geometric-types/display-geometric-types.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/display-geometric-types/display-geometric-types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/display-primes-less-than-100/display-primes-less-than-100.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/display-primes-less-than-100/display-primes-less-than-100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/draw-menu/draw-menu.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/draw-menu/draw-menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson1/exercise-read-number-into-words/exercise-read-number-into-words.iml" filepath="$PROJECT_DIR$/lesson1/exercise-read-number-into-words/exercise-read-number-into-words.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson4-class-and-object/fan/fan.iml" filepath="$PROJECT_DIR$/lesson4-class-and-object/fan/fan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/find-greatest-common-divisor/find-greatest-common-divisor.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/find-greatest-common-divisor/find-greatest-common-divisor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/find-max/find-max.iml" filepath="$PROJECT_DIR$/lesson3-array/find-max/find-max.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/find-max-two-dimensional-array/find-max-two-dimensional-array.iml" filepath="$PROJECT_DIR$/lesson3-array/find-max-two-dimensional-array/find-max-two-dimensional-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/find-min/find-min.iml" filepath="$PROJECT_DIR$/lesson3-array/find-min/find-min.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/find-value-in-array/find-value-in-array.iml" filepath="$PROJECT_DIR$/lesson3-array/find-value-in-array/find-value-in-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6-inheritance/geometric-objects/geometric-objects.iml" filepath="$PROJECT_DIR$/lesson6-inheritance/geometric-objects/geometric-objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/interest-calculate/interest-calculate.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/interest-calculate/interest-calculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/is-prime/is-prime.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/is-prime/is-prime.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson1/leap-year-calculator/leap-year-calculator.iml" filepath="$PROJECT_DIR$/lesson1/leap-year-calculator/leap-year-calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson1/lesson1.iml" filepath="$PROJECT_DIR$/lesson1/lesson1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/lesson2-loop-in-java.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/lesson2-loop-in-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/lesson3-array.iml" filepath="$PROJECT_DIR$/lesson3-array/lesson3-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson4-class-and-object/lesson4-class-and-object.iml" filepath="$PROJECT_DIR$/lesson4-class-and-object/lesson4-class-and-object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/lesson5-access-modifier-static-method-static-property.iml" filepath="$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/lesson5-access-modifier-static-method-static-property.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6-inheritance/lesson6-inheritance.iml" filepath="$PROJECT_DIR$/lesson6-inheritance/lesson6-inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson9-testing-and-TDD/lesson9-testing-and-TDD.iml" filepath="$PROJECT_DIR$/lesson9-testing-and-TDD/lesson9-testing-and-TDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/merge-array/merge-array.iml" filepath="$PROJECT_DIR$/lesson3-array/merge-array/merge-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/method-find-min-in-array/method-find-min-in-array.iml" filepath="$PROJECT_DIR$/lesson3-array/method-find-min-in-array/method-find-min-in-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniTest/miniTest.iml" filepath="$PROJECT_DIR$/miniTest/miniTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniTest2/miniTest2.iml" filepath="$PROJECT_DIR$/miniTest2/miniTest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6-inheritance/point2d-point3d/point2d-point3d.iml" filepath="$PROJECT_DIR$/lesson6-inheritance/point2d-point3d/point2d-point3d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson4-class-and-object/quadratic-equation/quadratic-equation.iml" filepath="$PROJECT_DIR$/lesson4-class-and-object/quadratic-equation/quadratic-equation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/remove-element-from-array/remove-element-from-array.iml" filepath="$PROJECT_DIR$/lesson3-array/remove-element-from-array/remove-element-from-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/reverse-array/reverse-array.iml" filepath="$PROJECT_DIR$/lesson3-array/reverse-array/reverse-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson2-loop-in-java/show-first-20-primes/show-first-20-primes.iml" filepath="$PROJECT_DIR$/lesson2-loop-in-java/show-first-20-primes/show-first-20-primes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/source.iml" filepath="$PROJECT_DIR$/.idea/source.iml" />
-      <module fileurl="file://$PROJECT_DIR$/system-time/system-time.iml" filepath="$PROJECT_DIR$/system-time/system-time.iml" />
-      <module fileurl="file://$PROJECT_DIR$/variable-dataType/variable-dataType.iml" filepath="$PROJECT_DIR$/variable-dataType/variable-dataType.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/static-method/static-method.iml" filepath="$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/static-method/static-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/static-property/static-property.iml" filepath="$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/static-property/static-property.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson4-class-and-object/stop-watch/stop-watch.iml" filepath="$PROJECT_DIR$/lesson4-class-and-object/stop-watch/stop-watch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/system-time/system-time.iml" filepath="$PROJECT_DIR$/lesson1/system-time/system-time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/temperature-convert/temperature-convert.iml" filepath="$PROJECT_DIR$/lesson3-array/temperature-convert/temperature-convert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/tinh-tong-duong-cheo-chinh/tinh-tong-duong-cheo-chinh.iml" filepath="$PROJECT_DIR$/lesson3-array/tinh-tong-duong-cheo-chinh/tinh-tong-duong-cheo-chinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson3-array/total/total.iml" filepath="$PROJECT_DIR$/lesson3-array/total/total.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson1/variable-dataType/variable-dataType.iml" filepath="$PROJECT_DIR$/lesson1/variable-dataType/variable-dataType.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/write-only-class-contruction/write-only-class-contruction.iml" filepath="$PROJECT_DIR$/lesson5-access-modifier-static-method-static-property/write-only-class-contruction/write-only-class-contruction.iml" />
     </modules>
   </component>
 </project>

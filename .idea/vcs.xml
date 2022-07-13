@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lesson9-testing-and-TDD/caculator/apj-junit-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lesson9-testing-and-TDD/caculator1/apj-junit-calculator" vcs="Git" />
   </component>
 </project>
