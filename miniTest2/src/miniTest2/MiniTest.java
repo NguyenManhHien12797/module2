@@ -4,11 +4,15 @@ package miniTest2;
 import java.util.Scanner;
 
 public class MiniTest {
+    private static int size;
+
+    public static void setSize(int size) {
+        MiniTest.size = size;
+    }
+
     public static void main(String[] args) {
-//        Scanner scanner= new Scanner(System.in);
-//        System.out.print("Enter size: ");
-//        int size = scanner.nextInt();
-        Employee employee[]= new Employee[5];
+        setSize(5);
+        Employee employee[]= new Employee[size];
         employee[0]= new EmployeeFullTime(1,"Dung", 18,"0123456789","nguyendung@gmail.com",1500000,5000000,9000000);
         employee[1]= new EmployeeFullTime(2,"Hien",19,"0234123142","nguyenhien@gmail.com",1000000,500000,3000000);
         employee[2]= new EmployeeFullTime(3,"Hieu",19,"023412312","nguyenhieu@gmail.com",2000000,1500000,4000000);
@@ -28,16 +32,52 @@ public class MiniTest {
 
         System.out.println("Sắp xếp nhân viên fulltime theo số lương tăng dần: ");
         sortEmployeeFullTime(employee);
-//        add(employee);
-//        for(int i=0; i<employee.length; i++){
-//            System.out.println(employee[i]);
-//        }
+
+        System.out.println("Thêm Employee");
+        Employee[] newarr= add(employee);
+        for(int i=0;i<newarr.length; i++){
+            System.out.println(newarr[i]);
+        }
+
 
     }
-//    public static Employee add(Employee[] arr){
-//        arr[0]= new EmployeePartTime(6,"Ba",18,"014151523","tranba@gmail.com",25);
-//        return arr[0];
-//    }
+    // Nhập info nhân viên
+    public static  Employee addinfo(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter code: ");
+        int code=scanner.nextInt();
+        System.out.print("Enter name: ");
+        Scanner inputName= new Scanner(System.in);
+        String name= inputName.nextLine();
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+        System.out.print("Enter phone: ");
+        Scanner inputPhone= new Scanner(System.in);
+        String phone=inputPhone.nextLine();
+        System.out.print("Enter email: ");
+        Scanner inputEmail= new Scanner(System.in);
+        String email=inputEmail.nextLine();
+        System.out.print("Enter bonus: ");
+        double bonus= scanner.nextDouble();
+        System.out.print("Enter fine: ");
+        double fine= scanner.nextDouble();
+        System.out.print("Enter fixedSalary: ");
+        double fixedSalary= scanner.nextDouble();
+        Employee newemp=new EmployeeFullTime(code, name,age,phone,email,bonus,fine,fixedSalary) ;
+        return newemp;
+    }
+    // Thêm nhân viên
+    public static Employee[] add(Employee[] arr){
+        size++;
+        Employee[] newarr= new Employee[size];
+        for(int i=0; i< arr.length;i++){
+            newarr[i]=arr[i];
+        }
+        for(int i= arr.length; i< newarr.length;i++){
+            newarr[i]=addinfo();
+        }
+        return newarr;
+    }
     // Tính lương trung bình
     public static double getAvgSalary(Employee[] array){
         double sum= 0;
