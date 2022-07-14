@@ -19,30 +19,44 @@ public class MiniTest {
         employee[3]= new EmployeePartTime(4,"Nam",19,"023412979","nguyennam@gmail.com",20);
         employee[4]= new EmployeePartTime(5,"Hoàng",19,"023412384","nguyenhoang@gmail.com",25);
 
-        double avg= getAvgSalary(employee);
+        System.out.println("Add Employee");
+        Employee[] newarr= add(employee);
+        for(Employee arr:newarr){
+            System.out.println(arr);
+        }
+
+        double avg= getAvgSalary(newarr);
         System.out.print("Trung bình lương của các nhân viên trong công ty là: "+avg);
 
-        Employee[] arr= getListEmployeeFullTime(employee,avg);
-        System.out.println("\nDanh sách nhân viên có lương thấp hơn lương trung bình:");
+        Employee[] arr= getListEmployeeFullTime(newarr,avg);
+        System.out.println("\nDanh sách nhân viên full time có lương thấp hơn lương trung bình:");
+        for(Employee newarr1:arr){
+            System.out.println(newarr1);
+        }
+        int count= 0;
         for(int i=0; i<arr.length;i++){
-            System.out.println(arr[i]);
+            if(arr[i]==null){
+                count++;
+            }
+        }
+        if(count==arr.length){
+            System.out.println("No employee is paid less than the average salary!");
+        }else {
+            for(Employee newarr1:arr){
+                System.out.println(newarr1);
+            }
         }
 
-        System.out.print("Lương phải trả cho tất cả nhân viên bán thời gian là: "+totalSalaryPartTime(employee)+"\n");
+        System.out.print("Lương phải trả cho tất cả nhân viên bán thời gian là: "+totalSalaryPartTime(newarr)+"\n");
 
         System.out.println("Sắp xếp nhân viên fulltime theo số lương tăng dần: ");
-        sortEmployeeFullTime(employee);
+        sortEmployeeFullTime(newarr);
 
-        System.out.println("Thêm Employee");
-        Employee[] newarr= add(employee);
-        for(int i=0;i<newarr.length; i++){
-            System.out.println(newarr[i]);
-        }
 
 
     }
-    // Nhập info nhân viên
-    public static  Employee addinfo(){
+    // Nhập info nhân viên fulltime
+    public static  Employee addInfoFullTime(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter code: ");
         int code=scanner.nextInt();
@@ -63,18 +77,49 @@ public class MiniTest {
         double fine= scanner.nextDouble();
         System.out.print("Enter fixedSalary: ");
         double fixedSalary= scanner.nextDouble();
-        Employee newemp=new EmployeeFullTime(code, name,age,phone,email,bonus,fine,fixedSalary) ;
-        return newemp;
+//        Employee newemp=new EmployeeFullTime(code, name,age,phone,email,bonus,fine,fixedSalary) ;
+        return new EmployeeFullTime(code, name,age,phone,email,bonus,fine,fixedSalary) ;
+
+    }
+    //Nhập info nhân viên parttime
+    public static  Employee addInfoPartTime(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter code: ");
+        int code=scanner.nextInt();
+        System.out.print("Enter name: ");
+        Scanner inputName= new Scanner(System.in);
+        String name= inputName.nextLine();
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+        System.out.print("Enter phone: ");
+        Scanner inputPhone= new Scanner(System.in);
+        String phone=inputPhone.nextLine();
+        System.out.print("Enter email: ");
+        Scanner inputEmail= new Scanner(System.in);
+        String email=inputEmail.nextLine();
+        System.out.print("Enter workingHours: ");
+        double workingHours= scanner.nextDouble();
+//        Employee newemp=new EmployeePartTime(code, name,age,phone,email,workingHours) ;
+        return new EmployeePartTime(code, name,age,phone,email,workingHours) ;
+    }
+    public static int yourChoice(){
+        System.out.printf("%s\n%s\n%s","Menu","1.Add EmployFullTime","2.Add EmployPartTime");
+        System.out.print("\nYour choice:");
+        Scanner scanner= new Scanner(System.in);
+        return scanner.nextInt();
     }
     // Thêm nhân viên
     public static Employee[] add(Employee[] arr){
         size++;
         Employee[] newarr= new Employee[size];
-        for(int i=0; i< arr.length;i++){
-            newarr[i]=arr[i];
-        }
+        System.arraycopy(arr,0,newarr,0,arr.length);
         for(int i= arr.length; i< newarr.length;i++){
-            newarr[i]=addinfo();
+            if(yourChoice()==1){
+                newarr[i]= addInfoFullTime();
+            }else {
+                newarr[i]= addInfoPartTime();
+            }
+
         }
         return newarr;
     }
@@ -94,20 +139,8 @@ public class MiniTest {
     }
 
     public static  Employee[] getListEmployeeFullTime(Employee[] array,double avg){
-        //Đếm số nhân viên Fulltime có lương nhỏ hơn lương trung bình
-        int count=0;
-        for(int i=0; i<array.length; i++){
-            if( array[i] instanceof EmployeeFullTime){
-                double salary = ((EmployeeFullTime) array[i]).getNetSalary();
-                if(salary<avg){
-                   count++;
-                }
-            }
-        }
+
         Employee[] listEmployeeFullTime= new EmployeeFullTime[array.length];
-        if(count==0){
-            System.out.println("No employee is paid less than the average salary!");
-        } else {
             // Đẩy số nhân viên có lương nhỏ hơn lương trung bình vào mảng
             for(int i= 0 ; i<array.length;i++){
                 if(array[i] instanceof EmployeeFullTime){
@@ -116,7 +149,6 @@ public class MiniTest {
                     }
                 }
             }
-        }
         return listEmployeeFullTime;
     }
     // Tính lương trả cho parttime
